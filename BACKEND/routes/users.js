@@ -177,17 +177,22 @@ router.post('/adduser',function(req,res,next){
                             <p>Please Don't Share these credentials with anyone</p>
                             <p>Please Use Google Chrome For better Experience`;
             let transporter = nodemailer.createTransport({
-              service: 'gmail',
+              host:"smtp.gmail.com",
+              service: "Gmail",
               secure: false,
-              port: 25,
-                  auth: {
-                  user: 'cms.feedback9144@gmail.com', // generated ethereal user
-                  pass: 'password.9144'  // generated ethereal password
-              },
-              tls:{
-                rejectUnauthorized:false
-              }
-            });
+              port: 465,
+              auth: {
+                type:"OAuth2",
+                user: "cms.feedback9144@gmail.com", // Your gmail address.
+                clientId: "308394806162-05urrln2cdalmn3ulnfoh0timj0uf51q.apps.googleusercontent.com",
+                clientSecret: "MaP1MuS2exIikaIyIuDk9uWq",
+                refreshToken: "1/WStdUMULUA5lEXrEUKtbxEYVHNiXATvjetJuu4MaFZs"
+                },
+              tls:
+              {
+                    rejectUnauthorized:false
+                }
+              });
           
             // setup email data with unicode symbols
             let mailOptions = {
@@ -251,17 +256,22 @@ router.post('/adduser',function(req,res,next){
                             <p>Please Don't Share these credentials with anyone</p>
                             <p>Please Use Google Chrome For better Experience`;
             let transporter = nodemailer.createTransport({
-              service: 'gmail',
+              host:"smtp.gmail.com",
+              service: "Gmail",
               secure: false,
-              port: 25,
-                  auth: {
-                  user: 'cms.feedback9144@gmail.com', // generated ethereal user
-                  pass: 'password.9144'  // generated ethereal password
-              },
-              tls:{
-                rejectUnauthorized:false
-              }
-            });
+              port: 465,
+              auth: {
+                type:"OAuth2",
+                user: "cms.feedback9144@gmail.com", // Your gmail address.
+                clientId: "308394806162-05urrln2cdalmn3ulnfoh0timj0uf51q.apps.googleusercontent.com",
+                clientSecret: "MaP1MuS2exIikaIyIuDk9uWq",
+                refreshToken: "1/WStdUMULUA5lEXrEUKtbxEYVHNiXATvjetJuu4MaFZs"
+                },
+              tls:
+              {
+                    rejectUnauthorized:false
+                }
+              });
           
             // setup email data with unicode symbols
             let mailOptions = {
@@ -313,17 +323,22 @@ router.post('/adduser',function(req,res,next){
                             <p>Please Don't Share these credentials with anyone</p>
                             <p>Please Use Google Chrome For better Experience`;
             let transporter = nodemailer.createTransport({
-              service: 'gmail',
+              host:"smtp.gmail.com",
+              service: "Gmail",
               secure: false,
-              port: 25,
-                  auth: {
-                  user: 'cms.feedback9144@gmail.com', // generated ethereal user
-                  pass: 'password.9144'  // generated ethereal password
-              },
-              tls:{
-                rejectUnauthorized:false
-              }
-            });
+              port: 465,
+              auth: {
+                type:"OAuth2",
+                user: "cms.feedback9144@gmail.com", // Your gmail address.
+                clientId: "308394806162-05urrln2cdalmn3ulnfoh0timj0uf51q.apps.googleusercontent.com",
+                clientSecret: "MaP1MuS2exIikaIyIuDk9uWq",
+                refreshToken: "1/WStdUMULUA5lEXrEUKtbxEYVHNiXATvjetJuu4MaFZs"
+                },
+              tls:
+              {
+                    rejectUnauthorized:false
+                }
+              });
           
             // setup email data with unicode symbols
             let mailOptions = {
@@ -709,17 +724,22 @@ router.post('/changepassword', function(req, res, next) {
                 `;
             
             let  transporter = nodemailer.createTransport({
-                service: 'gmail',
-                secure: false,
-                port: 25,
-                auth: {
-                user: 'cms.feedback9144@gmail.com',
-                pass: 'password.9144'
+              host:"smtp.gmail.com",
+              service: "Gmail",
+              secure: false,
+              port: 465,
+              auth: {
+                type:"OAuth2",
+                user: "cms.feedback9144@gmail.com", // Your gmail address.
+                clientId: "308394806162-05urrln2cdalmn3ulnfoh0timj0uf51q.apps.googleusercontent.com",
+                clientSecret: "MaP1MuS2exIikaIyIuDk9uWq",
+                refreshToken: "1/WStdUMULUA5lEXrEUKtbxEYVHNiXATvjetJuu4MaFZs"
                 },
-                tls:{
+              tls:
+              {
                     rejectUnauthorized:false
                 }
-            });
+              });
         
             // setup email data with unicode symbols
             let mailOptions = {
@@ -760,17 +780,22 @@ router.post('/changepassword', function(req, res, next) {
                 `;
             
             let  transporter = nodemailer.createTransport({
-                service: 'gmail',
-                secure: false,
-                port: 25,
-                auth: {
-                user: 'cms.feedback9144@gmail.com',
-                pass: 'password.9144'
+              host:"smtp.gmail.com",
+              service: "Gmail",
+              secure: false,
+              port: 465,
+              auth: {
+                type:"OAuth2",
+                user: "cms.feedback9144@gmail.com", // Your gmail address.
+                clientId: "308394806162-05urrln2cdalmn3ulnfoh0timj0uf51q.apps.googleusercontent.com",
+                clientSecret: "MaP1MuS2exIikaIyIuDk9uWq",
+                refreshToken: "1/WStdUMULUA5lEXrEUKtbxEYVHNiXATvjetJuu4MaFZs"
                 },
-                tls:{
+              tls:
+              {
                     rejectUnauthorized:false
                 }
-            });
+              });
         
             // setup email data with unicode symbols
             let mailOptions = {
@@ -810,17 +835,22 @@ router.post('/changepassword', function(req, res, next) {
                 `;
             
             let  transporter = nodemailer.createTransport({
-                service: 'gmail',
-                secure: false,
-                port: 25,
-                auth: {
-                user: 'cms.feedback9144@gmail.com',
-                pass: 'password.9144'
+              host:"smtp.gmail.com",
+              service: "Gmail",
+              secure: false,
+              port: 465,
+              auth: {
+                type:"OAuth2",
+                user: "cms.feedback9144@gmail.com", // Your gmail address.
+                clientId: "308394806162-05urrln2cdalmn3ulnfoh0timj0uf51q.apps.googleusercontent.com",
+                clientSecret: "MaP1MuS2exIikaIyIuDk9uWq",
+                refreshToken: "1/WStdUMULUA5lEXrEUKtbxEYVHNiXATvjetJuu4MaFZs"
                 },
-                tls:{
+              tls:
+              {
                     rejectUnauthorized:false
                 }
-            });
+              });
         
             // setup email data with unicode symbols
             let mailOptions = {

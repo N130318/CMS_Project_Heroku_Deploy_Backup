@@ -13,6 +13,9 @@ export class PostService {
   ) { }
 
   getStudentPosts(dept,year){
+    if(year==undefined||year==""){
+      year='all';
+    }
     return this.http.get("post/postsforstudents/"+dept+"/"+year)
       .map(res =>  res.json());
   }

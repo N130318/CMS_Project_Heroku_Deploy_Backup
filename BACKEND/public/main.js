@@ -2731,6 +2731,9 @@ var PostService = /** @class */ (function () {
         this.authService = authService;
     }
     PostService.prototype.getStudentPosts = function (dept, year) {
+        if (year == undefined || year == "") {
+            year = 'all';
+        }
         return this.http.get("post/postsforstudents/" + dept + "/" + year)
             .map(function (res) { return res.json(); });
     };
